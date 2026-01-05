@@ -91,7 +91,7 @@ services:
       - boot-otel-tempo-provider1
 
   promtail:
-    image: grafana/promtail:2.6.0
+    image: grafana/promtail:3.2.0
     command: -config.file=/etc/promtail/promtail-local.yaml
     volumes:
       - ./etc/promtail-local.yaml:/etc/promtail/promtail-local.yaml
